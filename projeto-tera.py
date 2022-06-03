@@ -18,7 +18,7 @@ st.write("O Tecnonutri é uma plataforma que conta com uma equipe multidisciplin
 st.header("Esses são os clientes com a maior probabilidade de desengajamento:")
 
 # dataset
-df = pd.read_csv('/Users/candido/Desktop/Data Science/Projeto Tera/data_limpo2.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/matheusjcandido/projeto-tera/main/data_limpo2.csv')
 
 # Definir x e y
 x = df.drop(['target', 'id'], axis=1)
