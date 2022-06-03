@@ -4,9 +4,8 @@ from sklearn.model_selection import train_test_split
 from lightgbm import LGBMClassifier
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, roc_auc_score, confusion_matrix, precision_recall_curve, precision_score, recall_score, f1_score, plot_precision_recall_curve, classification_report, plot_roc_curve, ConfusionMatrixDisplay
-import pickle
 
-st.image('TN_logov.png', use_column_width=True)
+st.image('TN_logov.png', use_column_width=False)
 
 # título
 st.title("Desengajamento de clientes do Tecnonutri")
@@ -69,5 +68,3 @@ col1, col2, col3 = st.columns(3)
 #inserindo na coluna 2
 col2.write(xgb_prob_df, use_column_width=True)
 #st.write(xgb_prob_df)
-
-pickle.dump(xgb_model, open('xgb_model.pkl', 'wb'))
