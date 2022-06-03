@@ -5,7 +5,7 @@ from lightgbm import LGBMClassifier
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, roc_auc_score, confusion_matrix, precision_recall_curve, precision_score, recall_score, f1_score, plot_precision_recall_curve, classification_report, plot_roc_curve, ConfusionMatrixDisplay
 
-st.image('TN_logov.png', use_column_width=False)
+#st.image('TN_logov.png', use_column_width=False)
 
 # título
 st.title("Desengajamento de clientes do Tecnonutri")
