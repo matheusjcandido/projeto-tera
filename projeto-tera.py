@@ -56,7 +56,7 @@ lgbm_prob_df = lgbm_prob_df.sort_values('prob', ascending=False)
 lgbm_prob_df = lgbm_prob_df.reset_index(drop=True)
 lgbm_prob_df_head = lgbm_prob_df.head(200)
 col1, col2, col3 = st.columns(3)
-col2.write(lgbm_prob_df, use_column_width=True)
+col2.write(lgbm_prob_df_head.iloc[:,0], use_column_width=True)
 
 
 
