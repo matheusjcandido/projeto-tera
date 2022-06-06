@@ -15,6 +15,8 @@ st.title("Desengajamento de clientes do Tecnonutri")
 
 st.write("O Tecnonutri é uma plataforma que conta com uma equipe multidisciplinar, com nutricionistas, psicólogos e treinadores, que auxiliam os clientes em programas de emagrecimento, vida saudável e ganho de massa. O aplicativo contém cardápios, listas de compras, protocolos de jejum intermitente, exercícios, meditações e conteúdos.")
 
+st.write("O modelo utilizado para predição é o LightGBM, que é construído a partir de algorimos de árvores de decisão. Aqui serão mostrados os IDs dos 200 clientes com maior probabilidade de desengajamento, ordenados da maior para a menor probabilidade.")
+
 st.header("Esses são os clientes com a maior probabilidade de desengajamento:")
 
 # dataset
