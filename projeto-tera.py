@@ -38,13 +38,13 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_
 lgbm_model = LGBMClassifier(
     random_state=42,
     scale_pos_weight = 0.15, # para tratar o balanceamento
-    learning_rate = 0.03,
-    num_leaves = 9,
-    min_child_samples = 7,
-    subsample = 0.73,
-    colsample_bytree = 0.38,
-    n_estimators=300,
-    subsample_freq = 1
+    learning_rate = 0.008,
+    num_leaves = 13,
+    min_child_samples = 65,
+    subsample = 0.86,
+    colsample_bytree = 0.53,
+    n_estimators=973,
+    subsample_freq = 7
 )
 lgbm_model.fit(x_train, y_train)
 
