@@ -51,7 +51,7 @@ lgbm_model.fit(x_train, y_train)
 lgbm_pred = lgbm_model.predict(x_test)
 
 lgbm_prob = lgbm_model.predict_proba(x_test)[:,1]
-lgbm_prob_df = pd.DataFrame({'id': x_test.index, 'prob': lgbm_prob})
+lgbm_prob_df = pd.DataFrame({'ID': x_test.index, 'prob': lgbm_prob})
 lgbm_prob_df = lgbm_prob_df.sort_values('prob', ascending=False)
 lgbm_prob_df = lgbm_prob_df.reset_index(drop=True)
 lgbm_prob_df_head = lgbm_prob_df.head(200)
