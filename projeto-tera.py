@@ -8,7 +8,7 @@ from PIL import Image
 import plotly.figure_factory as ff
 import plotly.express as px
 
-image = Image.open('https://github.com/matheusjcandido/projeto-tera/blob/main/tera_banner.png')
+image = Image.open('tera_banner.png')
 
 st.image(image, use_column_width=True)
 
