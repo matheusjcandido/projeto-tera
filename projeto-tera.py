@@ -8,7 +8,7 @@ from PIL import Image
 import plotly.figure_factory as ff
 import plotly.express as px
 
-image = Image.open('/Users/candido/Desktop/Data Science/Projeto Tera/tera_banner.png')
+image = Image.open('https://github.com/matheusjcandido/projeto-tera/blob/main/tera_banner.png')
 
 st.image(image, use_column_width=True)
 
@@ -22,11 +22,9 @@ st.write("Tendo impactado a vida de milhões de pessoas, atualmente conta com 30
 st.write("Nesta página, serão apresentadas informações sobre a atividade dos usuários de acordo com características específicas e, ao final, serão expostos os resultados de um modelo de previsão que indica quais os usuários com a maior probabilidade de desengajarem.")
 
 # dataset
-df = pd.read_csv('/Users/candido/Desktop/Data Science/Projeto Tera/data_limpo2.csv')
-df_cohorts = pd.read_csv('/Users/candido/Desktop/Data Science/Projeto Tera/cohorts.csv')
-
+df = pd.read_csv('https://github.com/matheusjcandido/projeto-tera/blob/main/data_limpo2.csv')
 # df_cohorts = pd.read_csv('https://drive.google.com/file/d/1w99zwweds2buuJDkuHFh-t-wZIMxtl17/view?usp=sharing')
-# df_cohorts = pd.read_csv('https://www.dropbox.com/s/t7dplc9h8353e60/cohorts.csv?dl=1')
+df_cohorts = pd.read_csv('https://www.dropbox.com/s/t7dplc9h8353e60/cohorts.csv?dl=1')
 # df_diff_days = df_cohorts.groupby(['user_id'])['diff_days'].max().reset_index(name='max_diff_days')
 # #Histograma dos usuários de acordo com o último dia que entraram no aplicativo
 # hist_diff_days = px.bar(df_diff_days['max_diff_days'].value_counts(normalize=True))
