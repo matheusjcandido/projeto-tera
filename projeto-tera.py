@@ -120,22 +120,19 @@ st.subheader("Esses são os clientes com a maior probabilidade de desengajamento
 lgbm_model = LGBMClassifier(
     random_state=42,
     scale_pos_weight = 0.15, # para tratar o balanceamento
-    learning_rate = 0.008,
-    num_leaves = 13,
-    min_child_samples = 65,
-    subsample = 0.86,
-    colsample_bytree = 0.53,
-    n_estimators=973,
-    subsample_freq = 7
+    learning_rate = 0.014,
+    num_leaves = 98,
+    min_child_samples = 85,
+    subsample = 0.81,
+    colsample_bytree = 0.92,
+    n_estimators=405,
+    subsample_freq = 3
 )
 lgbm_model.fit(x_train, y_train)
 
-lgbm_pred = lgbm_model.predict(x_test)
+# lgbm_pred = lgbm_model.predict(x_test)
 
 lgbm_prob = lgbm_model.predict_proba(x_test)[:,1]
-
-# selecionar os clientes que apresentam predição igual a 1
-lgbm_pred_1 = lgbm_model.predict(x_test)[lgbm_pred == 1]
 
 lgbm_prob_df = pd.DataFrame({'ID': x_test.index, 'prob': lgbm_prob})
 
