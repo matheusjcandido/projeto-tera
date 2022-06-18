@@ -13,8 +13,6 @@ st.title("Desengajamento de clientes de um app de saúde 📱🍲🏃‍♀️�
 
 st.write("O app de saúde estudado é uma plataforma que conta com uma equipe multidisciplinar, com nutricionistas, psicólogos e treinadores, que auxiliam os clientes em programas de emagrecimento, vida saudável e ganho de massa. O aplicativo contém cardápios, listas de compras, protocolos de jejum intermitente, exercícios, meditações e conteúdos.")
 
-st.write("Tendo impactado a vida de milhões de pessoas, atualmente conta com 30 mil instalações e 60 mil usuários únicos por semana.")
-
 st.write("Nesta página, serão apresentadas informações sobre a atividade dos usuários de acordo com características específicas e, ao final, serão expostos os resultados de um modelo de previsão que indica quais os usuários com a maior probabilidade de desengajarem.")
 
 # dataset
